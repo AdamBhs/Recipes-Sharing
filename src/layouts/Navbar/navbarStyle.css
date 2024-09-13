@@ -1,0 +1,112 @@
+nav {
+    position: relative;
+    box-shadow: 0px 1px 12px 1px rgba(172,172,172,1);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav .add-login {
+    display: flex;
+    gap: 40px;
+}
+
+.top-nav .logo-navlinks {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.top-nav .logo-navlinks ul {
+    display: flex;
+    gap: 48px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.top-nav .logo-navlinks li {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.top-nav .logo-navlinks li:hover {
+    color: var(--lightGreen-color);
+}
+
+.top-nav img {
+    width: 173px;
+    height: 90px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--lightGrey-color);
+}
+
+/* Bottom nav style */
+
+.filter-recipe {
+    display: flex;
+    margin-left: 255px;
+    list-style: none;
+    gap: 46px;
+}
+
+.filter-recipe li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.filter-recipe li::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    justify-content: center;
+    bottom: 1px;
+    height: 3px;
+    border-radius: 12px;
+    background-color: transparent;
+    transition: all 0.15s ease;
+    left: 1px;
+}
+
+.filter-recipe li:hover::after {
+    background-color: var(--darkGreen-color);
+}
+
+
+/* Media style */
+
+@media (min-width: 1480px) and (max-width: 1650px) {
+    .top-nav img {
+        width: 135px;  
+        height: auto;  
+    }
+
+    .top-nav .logo-navlinks ul {
+        gap: 37px; 
+        font-size: 16px;  
+        margin-left: 62px;  
+    }
+
+    .filter-recipe {
+        margin-left: calc(62px + 140px);
+        gap: 37px;
+        font-size: 14px;
+    }
+
+    .filter-recipe li {
+        padding: 6px;
+    }
+}

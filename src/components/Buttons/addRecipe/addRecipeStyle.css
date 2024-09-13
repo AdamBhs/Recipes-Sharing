@@ -1,0 +1,17 @@
+.addRecipe-btn {
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.addRecipe-btn:hover {
+    color: var(--lightGreen-color);
+}
+
+@media (min-width: 1480px) and (max-width: 1650px) {
+    .addRecipe-btn {
+        padding: 8px;
+        font-size: 16px;
+    }
+}

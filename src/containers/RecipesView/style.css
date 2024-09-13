@@ -1,0 +1,51 @@
+.recipe-view .section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.recipe-view .section-1 .title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.recipe-view .section-1 p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.recipe-view .section-1 p::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0%;
+    justify-content: center;
+    bottom: 0px;
+    height: 1px;
+    border-radius: 12px;
+    background-color: var(--light-black);
+    transition: all 0.2s ease;
+}
+
+.recipe-view .section-1 p:hover::after {
+    width: 96%
+}
+
+.recipe-view .section-1 .ioChevronForward {
+    font-size: 18px;
+}
+
+.recipe-view .type-description {
+    margin-bottom: 20px;
+}
+
+.recipe-view .section-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}

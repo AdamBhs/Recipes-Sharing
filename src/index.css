@@ -1,0 +1,34 @@
+@import url("./assets/styles/colorStyle.css");
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  user-select: none;
+
+  color-scheme: light dark;
+  color: var(--light-black);
+  background-color: #fbfbfb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+@media (min-width: 1480px) and (max-width: 1520px) {
+  .container {
+    margin-left: 117px;
+    margin-right: 117px;
+  }
+}
