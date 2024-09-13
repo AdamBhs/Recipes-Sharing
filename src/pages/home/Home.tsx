@@ -101,9 +101,7 @@ function Home() {
             api="https://api.spoonacular.com/recipes/complexSearch?apiKey=cbcd8682546049c1bbf4e3f49da82165&number=4&type=drink&addRecipeInformation=true"
         />
 
-        <div className="Recipe-week">
-          
-        </div>
+        <div className="Recipe-week"></div>
         
       </div>
     </div>

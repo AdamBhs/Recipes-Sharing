@@ -1,3 +1,4 @@
-import AddRecipe from "./addRecipe";
+import AddRecipe from "./AddRecipe";
+
 
 export default AddRecipe;
